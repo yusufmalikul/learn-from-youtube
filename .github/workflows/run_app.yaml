@@ -1,0 +1,42 @@
+name: Run App and Commit Output
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  push:
+    branches:
+      - main # or your main branch name
+
+jobs:
+  run_app_and_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.latest
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run app.py
+        run: python3 app.py --topic knowledge --api-key ${{ secrets.YOUTUBE_API_KEY }} --output videos.json
+
+      - name: Configure Git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Add and Commit output
+        run: |
+          git add videos.json
+          git commit -m "Add videos.json output" || echo "No changes to commit" # handle no changes scenario
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

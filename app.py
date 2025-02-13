@@ -11,7 +11,7 @@ def youtube_search(api_key, search_term, topic_id):
     youtube = build('youtube', 'v3', developerKey=api_key)
     request = youtube.search().list(
         part='snippet',
-        maxResults=10,
+        maxResults=50,
         q=search_term,
         topicId=topic_id,
         type='video'
