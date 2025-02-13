@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Videos</title>
+</head>
+<body>
+    <h1>YouTube Videos</h1>
+    <input type="text" id="searchInput" placeholder="Search by topic">
+    <button onclick="searchVideos()">Search</button>
+    <div id="videos"></div>
+
+    <script>
+        let allVideos = [];
+
+        fetch('videos.json') // make sure this matches your output file name
+            .then(response => response.json())
+            .then(videos => {
+                allVideos = videos;
+                displayVideos(videos);
+            });
+
+        function displayVideos(videos) {
+            const videosDiv = document.getElementById('videos');
+            videosDiv.innerHTML = '';
+            for (const videoId in videos) {
+                const video = videos[videoId];
+                const videoElement = document.createElement('div');
+                videoElement.innerHTML = `
+                    <h2>${video.title}</h2>
+                    <img src="${video.thumbnail_url}" alt="Thumbnail">
+                    <p><strong>View Count:</strong> ${video.view_count}</p>
+                    <p><strong>Like Count:</strong> ${video.like_count}</p>
+                    <p><strong>Comment Count:</strong> ${video.comment_count}</p>
+                    <p><strong>Published At:</strong> ${video.published_at}</p>
+                    <p><strong>Duration:</strong> ${video.duration}</p>
+                    <p><strong>Like/View Ratio:</strong> ${video.like_view_ratio}</p>
+                    <p><strong>Topic Categories:</strong> ${video.topic_categories.join(', ')}</p>
+                    <hr>
+                `;
+                videosDiv.appendChild(videoElement);
+            }
+        }
+
+        function searchVideos() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const filteredVideos = {};
+            for (const videoId in allVideos) {
+                const video = allVideos[videoId];
+                if (video.topic_categories.some(topic => topic.toLowerCase().includes(searchInput))) {
+                    filteredVideos[videoId] = video;
+                }
+            }
+            displayVideos(filteredVideos);
+        }
+    </script>
+</body>
+</html>
