@@ -3,10 +3,131 @@
 
 <head>
     <title>Learn from YouTube - Topics Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        #topics {
+            margin-bottom: 20px;
+        }
+
+        #topics h2 {
+            margin-top: 0;
+            color: #202122;
+            text-align: center;
+        }
+
+        #topics ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #topics li {
+            margin: 0;
+        }
+
+        #topics button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        #topics button:hover {
+            background-color: #0056b3;
+        }
+
+        #videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        #videos div {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #videos h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        #videos h2 a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        #videos img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #videos p {
+            margin: 5px 0;
+        }
+
+        #videos hr {
+            border: 0;
+            border-bottom: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            #topics ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #topics button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            #videos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Learn from YouTube - Topics Search</h1>
+    <h1>Learn from YouTube</h1>
     <div id="topics">
         <!-- Topics will be listed here -->
     </div>
@@ -26,7 +147,7 @@
 
         function displayTopics(videos) {
             const topicsDiv = document.getElementById('topics');
-            topicsDiv.innerHTML = '<h2>Topics</h2>';
+            topicsDiv.innerHTML = '<h2>Choose Topics</h2>';
             const uniqueTopics = new Set();
             for (const videoId in videos) {
                 const video = videos[videoId];
@@ -48,25 +169,27 @@
         function displayVideos(videos) {
             const videosDiv = document.getElementById('videos');
             videosDiv.innerHTML = '';
-            if (Object.keys(videos).length === 0) {
+            const filteredVideos = Object.fromEntries(
+                Object.entries(videos).filter(([videoId, video]) => !video.made_for_kids)
+            );
+            if (Object.keys(filteredVideos).length === 0) {
                 videosDiv.innerHTML = '<p>No videos found for this topic.</p>';
                 return;
             }
-            for (const videoId in videos) {
-                const video = videos[videoId];
+            for (const videoId in filteredVideos) {
+                const video = filteredVideos[videoId];
                 const videoElement = document.createElement('div');
                 videoElement.innerHTML = `
-                <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${video.title}</a></h2>
-                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img src="${video.thumbnail_url}" alt="Thumbnail"></a>
-                <p><strong>View Count:</strong> ${video.view_count}</p>
-                <p><strong>Like Count:</strong> ${video.like_count}</p>
-                <p><strong>Comment Count:</strong> ${video.comment_count}</p>
-                <p><strong>Published At:</strong> ${video.published_at}</p>
-                <p><strong>Duration:</strong> ${video.duration}</p>
-                <p><strong>Like/View Ratio:</strong> ${video.like_view_ratio}</p>
-                <p><strong>Topic Categories:</strong> ${video.topic_categories.join(', ')}</p>
-                <hr>
-            `;
+                    <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${video.title}</a></h2>
+                    <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img src="${video.thumbnail_url}" alt="Thumbnail"></a>
+                    <p><strong>Views:</strong> ${video.view_count}</p>
+                    <p><strong>Likes:</strong> ${video.like_count} (${video.like_view_ratio})</p>
+                    <p><strong>Comments:</strong> ${video.comment_count}</p>
+                    <p><strong>Published At:</strong> ${video.published_at}</p>
+                    <p><strong>Duration:</strong> ${video.duration}</p>
+                    <p><strong>Topic:</strong> ${video.topic_categories.join(', ')}</p>
+                    <hr>
+                `;
                 videosDiv.appendChild(videoElement);
             }
         }

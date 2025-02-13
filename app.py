@@ -23,7 +23,7 @@ def youtube_search(api_key, search_term, topic_id):
 def get_video_details(api_key, video_ids):
     youtube = build('youtube', 'v3', developerKey=api_key)
     request = youtube.videos().list(
-        part='statistics,snippet,contentDetails,topicDetails',
+        part='statistics,snippet,contentDetails,topicDetails,status',
         id=','.join(video_ids)
     )
     response = request.execute()
@@ -39,6 +39,7 @@ def get_video_details(api_key, video_ids):
         content_details = item['contentDetails']
         topic_details = item.get('topicDetails', {})
         published_at = parser.parse(snippet['publishedAt'])
+        status = item.get('status', {})
         now = datetime.now(pytz.utc)
         delta = relativedelta(now, published_at)
         if delta.years > 0:
@@ -62,7 +63,8 @@ def get_video_details(api_key, video_ids):
             'thumbnail_url': snippet['thumbnails']['default']['url'],
             'duration': format_duration(content_details['duration']),
             'topic_categories': [url.split('/')[-1] for url in topic_details.get('topicCategories', [])],
-            'is_short': isodate.parse_duration(content_details['duration']).total_seconds() <= 60
+            'is_short': isodate.parse_duration(content_details['duration']).total_seconds() <= 60,
+            'made_for_kids': status.get('madeForKids', False),
         }
         view_count = int(statistics.get('viewCount', 0))
         like_count = int(statistics.get('likeCount', 0))
