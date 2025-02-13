@@ -33,7 +33,7 @@ jobs:
       - name: Add and Commit output
         run: |
           git add videos.json
-          git commit -m "Add videos.json output" || echo "No changes to commit" # handle no changes scenario
+          git commit -m "Update videos.json" || echo "No changes to commit" # handle no changes scenario
 
       - name: Push changes
         uses: ad-m/github-push-action@master

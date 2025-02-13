@@ -57,6 +57,10 @@
             background-color: #0056b3;
         }
 
+        #topics p {
+            text-align: center;
+        }
+
         #videos {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -147,7 +151,7 @@
 
         function displayTopics(videos) {
             const topicsDiv = document.getElementById('topics');
-            topicsDiv.innerHTML = '<h2>Choose Topics</h2>';
+            topicsDiv.innerHTML = '<h2>Choose Topics</h2><p>Video list updated hourly.</p>';
             const uniqueTopics = new Set();
             for (const videoId in videos) {
                 const video = videos[videoId];
