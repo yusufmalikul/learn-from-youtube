@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>YouTube Videos</title>
+    <title>Learn from YouTube - Topics Search</title>
 </head>
+
 <body>
-    <h1>YouTube Videos</h1>
-    <input type="text" id="searchInput" placeholder="Search by topic">
-    <button onclick="searchVideos()">Search</button>
-    <div id="videos"></div>
+    <h1>Learn from YouTube - Topics Search</h1>
+    <div id="topics">
+        <!-- Topics will be listed here -->
+    </div>
+    <div id="videos">
+        <!-- Videos will be displayed here after topic selection -->
+    </div>
 
     <script>
         let allVideos = [];
 
-        fetch('videos.json') // make sure this matches your output file name
+        fetch('videos.json')
             .then(response => response.json())
             .then(videos => {
                 allVideos = videos;
-                displayVideos(videos);
+                displayTopics(videos); // Display topics instead of videos on homepage
             });
+
+        function displayTopics(videos) {
+            const topicsDiv = document.getElementById('topics');
+            topicsDiv.innerHTML = '<h2>Topics</h2>';
+            const uniqueTopics = new Set();
+            for (const videoId in videos) {
+                const video = videos[videoId];
+                video.topic_categories.forEach(topic => uniqueTopics.add(topic));
+            }
+
+            const topicsList = document.createElement('ul');
+            uniqueTopics.forEach(topic => {
+                const topicItem = document.createElement('li');
+                const topicButton = document.createElement('button');
+                topicButton.textContent = topic;
+                topicButton.onclick = function () { searchVideosByTopic(topic); };
+                topicItem.appendChild(topicButton);
+                topicsList.appendChild(topicItem);
+            });
+            topicsDiv.appendChild(topicsList);
+        }
 
         function displayVideos(videos) {
             const videosDiv = document.getElementById('videos');
             videosDiv.innerHTML = '';
+            if (Object.keys(videos).length === 0) {
+                videosDiv.innerHTML = '<p>No videos found for this topic.</p>';
+                return;
+            }
             for (const videoId in videos) {
                 const video = videos[videoId];
                 const videoElement = document.createElement('div');
                 videoElement.innerHTML = `
-                    <h2>${video.title}</h2>
-                    <img src="${video.thumbnail_url}" alt="Thumbnail">
-                    <p><strong>View Count:</strong> ${video.view_count}</p>
-                    <p><strong>Like Count:</strong> ${video.like_count}</p>
-                    <p><strong>Comment Count:</strong> ${video.comment_count}</p>
-                    <p><strong>Published At:</strong> ${video.published_at}</p>
-                    <p><strong>Duration:</strong> ${video.duration}</p>
-                    <p><strong>Like/View Ratio:</strong> ${video.like_view_ratio}</p>
-                    <p><strong>Topic Categories:</strong> ${video.topic_categories.join(', ')}</p>
-                    <hr>
-                `;
+                <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${video.title}</a></h2>
+                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img src="${video.thumbnail_url}" alt="Thumbnail"></a>
+                <p><strong>View Count:</strong> ${video.view_count}</p>
+                <p><strong>Like Count:</strong> ${video.like_count}</p>
+                <p><strong>Comment Count:</strong> ${video.comment_count}</p>
+                <p><strong>Published At:</strong> ${video.published_at}</p>
+                <p><strong>Duration:</strong> ${video.duration}</p>
+                <p><strong>Like/View Ratio:</strong> ${video.like_view_ratio}</p>
+                <p><strong>Topic Categories:</strong> ${video.topic_categories.join(', ')}</p>
+                <hr>
+            `;
                 videosDiv.appendChild(videoElement);
             }
         }
 
-        function searchVideos() {
-            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        function searchVideosByTopic(topic) {
             const filteredVideos = {};
             for (const videoId in allVideos) {
                 const video = allVideos[videoId];
-                if (video.topic_categories.some(topic => topic.toLowerCase().includes(searchInput))) {
+                if (video.topic_categories.some(videoTopic => videoTopic.toLowerCase() === topic.toLowerCase())) {
                     filteredVideos[videoId] = video;
                 }
             }
@@ -54,4 +83,5 @@
         }
     </script>
 </body>
+
 </html>
