@@ -27,8 +27,10 @@ def get_video_details(api_key, video_ids):
         id=','.join(video_ids)
     )
     response = request.execute()
-    print(f"Full API response from get_video_details: {response}") # ADD THIS LINE
-
+    # print(f"Full API response from get_video_details: {response}")
+    # Count total videos
+    total_videos = len(response['items'])
+    print(f"Total videos: {total_videos}")
     video_details = {}
     for item in response['items']:
         video_id = item['id']
