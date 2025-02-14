@@ -15,7 +15,8 @@ def youtube_search(api_key, search_term, topic_id):
         maxResults=50,
         q=search_term,
         topicId=topic_id,
-        type='video'
+        type='video',
+        relevanceLanguage='en,id'  # Add this line to filter by English and Indonesian
     )
     response = request.execute()
     video_ids = [item['id']['videoId'] for item in response['items'] if item['id']['kind'] == 'youtube#video']
