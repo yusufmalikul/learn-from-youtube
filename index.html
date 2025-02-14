@@ -141,17 +141,20 @@
 
     <script>
         let allVideos = [];
+        let total_videos = 0;
 
         fetch('videos.json')
             .then(response => response.json())
             .then(videos => {
                 allVideos = videos;
+                total_videos = Object.keys(videos).length; // Update total videos count
                 displayTopics(videos); // Display topics instead of videos on homepage
+                updateTotalVideos(videos); // Update total videos count
             });
 
         function displayTopics(videos) {
             const topicsDiv = document.getElementById('topics');
-            topicsDiv.innerHTML = '<h2>Choose Topics</h2><p>Video list updated hourly.</p>';
+            topicsDiv.innerHTML = '<h2>Choose Topics</h2><p>Video list updated hourly.</p><p>Total Videos: ' + total_videos + '</p>';
             const uniqueTopics = new Set();
             for (const videoId in videos) {
                 const video = videos[videoId];
