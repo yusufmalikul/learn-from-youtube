@@ -188,9 +188,10 @@
             const sortedVideos = Object.entries(filteredVideos).sort(([, a], [, b]) => b.like_count - a.like_count);
 
             for (const [videoId, video] of sortedVideos) {
+                const cleanTitle = video.title.replace(/#\S+/g, ''); // Remove tags from title
                 const videoElement = document.createElement('div');
                 videoElement.innerHTML = `
-                    <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${video.title}</a></h2>
+                    <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${cleanTitle}</a></h2>
                     <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img src="${video.thumbnail_url}" alt="Thumbnail"></a>
                     <p><strong>Views:</strong> ${video.view_count}</p>
                     <p><strong>Likes:</strong> ${video.like_count} (${video.like_view_ratio})</p>
