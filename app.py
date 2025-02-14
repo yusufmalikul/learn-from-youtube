@@ -16,7 +16,7 @@ def youtube_search(api_key, search_term, topic_id):
         q=search_term,
         topicId=topic_id,
         type='video',
-        relevanceLanguage='en'  # Add this line to filter by English and Indonesian
+        relevanceLanguage='en'
     )
     response = request.execute()
     video_ids = [item['id']['videoId'] for item in response['items'] if item['id']['kind'] == 'youtube#video']
@@ -147,7 +147,7 @@ def main():
 
             with open(args.output, 'w') as f:
                 json.dump(existing_data, f, indent=4)
-            print(f"Video details appended to {args.output}") # message changed to appended
+            print(f"Video details appended to {args.output}")
         else:
             print("No video details found.")
     else:
