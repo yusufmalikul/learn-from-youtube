@@ -73,7 +73,7 @@ def get_video_details(api_key, video_ids):
             'title': snippet['title'],
             'view_count': statistics.get('viewCount', 'N/A'),
             'like_count': statistics.get('likeCount', 'N/A'),
-            'comment_count': statistics.get('commentCount', 'N/A'),
+            'comment_count': statistics.get('commentCount', '0'),
             'published_at': published_at_str,
             'thumbnail_url': snippet['thumbnails']['default']['url'],
             'duration': format_duration(content_details['duration']),
@@ -90,7 +90,7 @@ def get_video_details(api_key, video_ids):
         else:
             video_details[video_id]['like_view_ratio'] = '0.00%'
 
-    video_details = {video_id: details for video_id, details in video_details.items() if not details['is_short']}
+    video_details = {video_id: details for video_id, details in video_details.items() if not details['is_short'] and int(details.get('comment_count', 0)) > 0}
     return video_details
 
 def format_duration(duration):
