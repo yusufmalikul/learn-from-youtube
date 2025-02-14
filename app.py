@@ -1,4 +1,5 @@
 import argparse
+import random
 from googleapiclient.discovery import build
 import isodate
 from datetime import datetime
@@ -20,6 +21,21 @@ def youtube_search(api_key, search_term, topic_id):
     video_ids = [item['id']['videoId'] for item in response['items'] if item['id']['kind'] == 'youtube#video']
     return video_ids
 
+def get_top_comments(api_key, video_id):
+    youtube = build('youtube', 'v3', developerKey=api_key)
+    request = youtube.commentThreads().list(
+        part='snippet',
+        videoId=video_id,
+        maxResults=3,
+        order='relevance'
+    )
+    response = request.execute()
+    comments = []
+    for item in response['items']:
+        comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
+        comments.append(comment)
+    return comments
+
 def get_video_details(api_key, video_ids):
     youtube = build('youtube', 'v3', developerKey=api_key)
     request = youtube.videos().list(
@@ -27,8 +43,6 @@ def get_video_details(api_key, video_ids):
         id=','.join(video_ids)
     )
     response = request.execute()
-    # print(f"Full API response from get_video_details: {response}")
-    # Count total videos
     total_videos = len(response['items'])
     print(f"Total videos: {total_videos}")
     video_details = {}
@@ -65,6 +79,7 @@ def get_video_details(api_key, video_ids):
             'topic_categories': [url.split('/')[-1] for url in topic_details.get('topicCategories', [])],
             'is_short': isodate.parse_duration(content_details['duration']).total_seconds() <= 60,
             'made_for_kids': status.get('madeForKids', False),
+            'top_comments': get_top_comments(api_key, video_id) if int(statistics.get('commentCount', 0)) > 0 else []
         }
         view_count = int(statistics.get('viewCount', 0))
         like_count = int(statistics.get('likeCount', 0))
@@ -91,7 +106,7 @@ def format_duration(duration):
 
 def main():
     parser = argparse.ArgumentParser(description='YouTube Video Search CLI')
-    parser.add_argument('--topic', type=str, required=True, help='Topic to search for (lifestyle, hobby, knowledge)')
+    parser.add_argument('--topic', type=str, help='Topic to search for (lifestyle, hobby, knowledge)')
     parser.add_argument('--api-key', type=str, required=True, help='Your YouTube Data API v3 key')
     parser.add_argument('--output', type=str, default='videos.json', help='Output JSON file name (default: videos.json)')
 
@@ -101,7 +116,15 @@ def main():
         'lifestyle': '/m/019_rr',
         'hobby': '/m/03glg',
         'knowledge': '/m/01k8wb',
+        'technology': '/m/07c1v',
+        'business': '/m/09s1f',
+        'health': '/m/0kt51',
     }
+
+    if not args.topic:
+        args.topic = random.choice(list(topic_ids.keys()))
+        print(f"No topic provided. Randomly selected topic: {args.topic}")
+
     topic_id = topic_ids.get(args.topic)
     if not topic_id:
         print(f"Error: Invalid topic. Choose from: {', '.join(topic_ids.keys())}")

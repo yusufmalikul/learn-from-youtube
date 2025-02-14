@@ -176,12 +176,15 @@
             const filteredVideos = Object.fromEntries(
                 Object.entries(videos).filter(([videoId, video]) => !video.made_for_kids)
             );
+
             if (Object.keys(filteredVideos).length === 0) {
                 videosDiv.innerHTML = '<p>No videos found for this topic.</p>';
                 return;
             }
-            for (const videoId in filteredVideos) {
-                const video = filteredVideos[videoId];
+
+            const sortedVideos = Object.entries(filteredVideos).sort(([, a], [, b]) => b.like_count - a.like_count);
+
+            for (const [videoId, video] of sortedVideos) {
                 const videoElement = document.createElement('div');
                 videoElement.innerHTML = `
                     <h2><a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${video.title}</a></h2>
@@ -192,6 +195,10 @@
                     <p><strong>Published At:</strong> ${video.published_at}</p>
                     <p><strong>Duration:</strong> ${video.duration}</p>
                     <p><strong>Topic:</strong> ${video.topic_categories.join(', ')}</p>
+                    <p><strong>Top Comments:</strong></p>
+                    <ul>
+                        ${video.top_comments && video.top_comments.length > 0 ? video.top_comments.map(comment => `<li>${comment}</li>`).join('') : '<li>No comments available</li>'}
+                    </ul>
                     <hr>
                 `;
                 videosDiv.appendChild(videoElement);
