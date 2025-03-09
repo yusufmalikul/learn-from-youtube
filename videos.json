@@ -66345,10 +66345,10 @@
     },
     "o_RNzmkiLnQ": {
         "title": "Life is Not About Being Happy",
-        "view_count": "103851",
-        "like_count": "6213",
-        "comment_count": "488",
-        "published_at": "3 days ago",
+        "view_count": "114355",
+        "like_count": "6704",
+        "comment_count": "500",
+        "published_at": "4 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/o_RNzmkiLnQ/default.jpg",
         "duration": "4m 14s",
         "topic_categories": [
@@ -66358,10 +66358,10 @@
         "made_for_kids": false,
         "top_comments": [
             "This is the hardest thing to accept sometimes,the life we want versus the one we get/need in reality.",
-            "Your videos are so inspiring. It&#39;s crazy how one small change can lead to big results. I&#39;ve been focusing more on my mindset lately (I read all books from MindBloomery), and it made a huge difference. It&#39;s the knowledge that most people don&#39;t know even exists. Especially the book &#39;Power of Assertiveness: Unlock your potential&#39; has been a huge part of my personal transformation and helped me to push through my own mental blocks. Sometimes it&#39;s all about believing you can do it, even though it feels really tough.",
-            "I went to the gym and spoke to both my parents today. I&#39;m happy."
+            "Don&#39;t pursue happiness, pursue being resilient. That way, no matter what happens, you will end up winning.",
+            "This hits home. Despite the anxiety and worries bothering me now, this made me realise that these tough situations has made me stronger and more resilient, and more accepting. I agree, this is what makes life interesting and worth living for. Thank you!"
         ],
-        "like_view_ratio": "5.98%"
+        "like_view_ratio": "5.86%"
     },
     "1E_iUI4tPT4": {
         "title": "The \u2018Ugly\u2019 Queen: The Portrait That Tricked King Henry VIII",
@@ -72327,10 +72327,10 @@
     },
     "BZ-VmgCFHUQ": {
         "title": "Why didn't the Great Powers join the Franco-Prussian War? (Short Animated Documentary)",
-        "view_count": "322768",
-        "like_count": "23379",
-        "comment_count": "899",
-        "published_at": "1 days ago",
+        "view_count": "326196",
+        "like_count": "23545",
+        "comment_count": "901",
+        "published_at": "2 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/BZ-VmgCFHUQ/default.jpg",
         "duration": "3m 20s",
         "topic_categories": [
@@ -72339,11 +72339,11 @@
         "is_short": false,
         "made_for_kids": false,
         "top_comments": [
+            "Another reason why Italy didn&#39;t join the war was because they really wanted Rome, but they knew they weren&#39;t strong enough to take Rome as long as it was defended by French troops. Getting involved in the war on Prussia&#39;s side would mean having to fight those French troops, and getting involved on France&#39;s side wouldn&#39;t give them Rome. So, when they saw the war was going badly for France, they decided their best policy was to wait until France recalled the troops in Rome to defend France and then march in and take a now defenseless Rome and (mostly) complete Italian unification.",
             "&quot;France had made the unforgivable mistake, of being France&quot;. That just sums up the British and French relationship throughout the 11th to 18th Century",
-            "Because &quot;we hate both of you&quot; - everyone<br>Because &quot;I like both of you&quot; - Italy",
-            "Another reason why Italy didn&#39;t join the war was because they really wanted Rome, but they knew they weren&#39;t strong enough to take Rome as long as it was defended by French troops. Getting involved in the war on Prussia&#39;s side would mean having to fight those French troops, and getting involved on France&#39;s side wouldn&#39;t give them Rome. So, when they saw the war was going badly for France, they decided their best policy was to wait until France recalled the troops in Rome to defend France and then march in and take a now defenseless Rome and (mostly) complete Italian unification."
+            "Because &quot;we hate both of you&quot; - everyone<br>Because &quot;I like both of you&quot; - Italy"
         ],
-        "like_view_ratio": "7.24%"
+        "like_view_ratio": "7.22%"
     },
     "6DxJA4sEzFs": {
         "title": "Meghan Markle's Totally Out-of-Touch Drew Barrymore Appearance and People Mag Interview, w/ Callahan",
@@ -73948,10 +73948,10 @@
     },
     "rgsIkZkflMw": {
         "title": "2 Bytes Was Enough To Breach The US Treasury",
-        "view_count": "110527",
-        "like_count": "5937",
-        "comment_count": "337",
-        "published_at": "1 days ago",
+        "view_count": "130923",
+        "like_count": "6894",
+        "comment_count": "389",
+        "published_at": "2 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/rgsIkZkflMw/default.jpg",
         "duration": "8m 31s",
         "topic_categories": [
@@ -73962,10 +73962,10 @@
         "made_for_kids": false,
         "top_comments": [
             "<a href=\"https://www.youtube.com/watch?v=rgsIkZkflMw&amp;t=282\">4:42</a>, tiny correction:<br>It is not checking the first byte (8 bits) of the sequence, rather it is checking whether the first <b><i>three</i></b> bits of the sequence <b><i>s</i></b> is 0xc0 (1100 0000). In other words, `*s &amp; 0xe0` is there to mask the first three bits of <b><i>s</i></b> and the `== 0xc0` is there to check whether the <b><i>masked</i></b> three bits equal to <b><i>110</i></b> 0 0000. Because in UTF-8 encoding, 0xxxxxxx, 110xxxxx, 1110xxxx and 11110xxx are apparently reserved &quot;keywords&quot; that determine the length of the stored character. This kicked my ass when I first watched the video, hope it clarifies it for others :)",
-            "The amount of bugs caused by trying to check the length of a string",
-            "That&#39;s quite creative a flaw inside the escape feature itself that&#39;s gone linger for many years to come on legacy systems."
+            "That&#39;s quite creative a flaw inside the escape feature itself that&#39;s gone linger for many years to come on legacy systems.",
+            "The amount of bugs caused by trying to check the length of a string"
         ],
-        "like_view_ratio": "5.37%"
+        "like_view_ratio": "5.27%"
     },
     "k_7OpM0KhzE": {
         "title": "Grave of the German Navy - Battle of Norway 1940 (Documentary)",
@@ -74030,9 +74030,9 @@
     },
     "xZDSqmOnnR0": {
         "title": "Human Language Gene Inserted Into Mice Led to Some Bizarre Effects",
-        "view_count": "402858",
-        "like_count": "30326",
-        "comment_count": "4008",
+        "view_count": "410870",
+        "like_count": "30646",
+        "comment_count": "4056",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/xZDSqmOnnR0/default.jpg",
         "duration": "12m 47s",
@@ -74047,7 +74047,7 @@
             "Doctor: <i>Injects human speech gene into mouse</i><br>Mouse: &quot;Why the f*ck you got us all locked up in these cages, bro?&quot;",
             "Giving mice the gift of understanding the horrors that used to be beyond their comprehension."
         ],
-        "like_view_ratio": "7.53%"
+        "like_view_ratio": "7.46%"
     },
     "FnRhnZbDprE": {
         "title": "A 1.58-Dimensional Object - Numberphile",
@@ -76270,9 +76270,9 @@
     },
     "6LX5cLwsTB4": {
         "title": "The Brutal Reality of Neanderthal Violence",
-        "view_count": "64248",
-        "like_count": "4361",
-        "comment_count": "357",
+        "view_count": "67059",
+        "like_count": "4487",
+        "comment_count": "365",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/6LX5cLwsTB4/default.jpg",
         "duration": "16m 31s",
@@ -76284,16 +76284,16 @@
         "top_comments": [
             "Our village is near Shanidar Cave, and it has a truly exotic and stunning view in person. Greetings from Kurdistan! \u2764",
             "As someone who cracked two ribs  coming off my motorcycle just over a week ago, I really feel for this poor neanderthal. I am fortunate that medicine has never been more advanced, and I&#39;ve had access to decent pain relief and physio therapy. I can&#39;t imagine the pain this poor chap felt in his final days or weeks. Makes you realise how lucky we all are to live in the time period we do.",
-            "Do you think Neanderthals were violent? What effect do you think this had on their and our evolution?<br>Leave a comment!\u2b07\ufe0f\u2b07\ufe0f\u2b07\ufe0f"
+            "One of the best channels on the Youba Tuba"
         ],
-        "like_view_ratio": "6.79%"
+        "like_view_ratio": "6.69%"
     },
     "7oubo6Wdazw": {
         "title": "Ancient Earth: The Mystery of the Feathered Dragons",
-        "view_count": "132732",
-        "like_count": "2743",
-        "comment_count": "115",
-        "published_at": "1 days ago",
+        "view_count": "142433",
+        "like_count": "2887",
+        "comment_count": "119",
+        "published_at": "2 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/7oubo6Wdazw/default.jpg",
         "duration": "52m 14s",
         "topic_categories": [
@@ -76305,16 +76305,16 @@
         "top_comments": [
             "Best dino documentary I have seen so far in 2025.",
             "The connection between dinosaurs and modern birds is truly mind-blowing! Huge thanks to the production team for this captivating and informative documentary! \ud83d\udc4f",
-            "The 2 winged dinosaur making out while the bigger ones was searching them was so funny...nice work for the animators and editors! Cheers from philippines"
+            "Finally we now beginning to see what dinosaur really look like and not like a turkey without its feather that previously portrayed."
         ],
-        "like_view_ratio": "2.07%"
+        "like_view_ratio": "2.03%"
     },
     "bxu2Iqg8EQU": {
         "title": "The 3 Iranic countries explained",
-        "view_count": "145809",
-        "like_count": "17049",
-        "comment_count": "289",
-        "published_at": "17 hours ago",
+        "view_count": "171674",
+        "like_count": "19179",
+        "comment_count": "330",
+        "published_at": "19 hours ago",
         "thumbnail_url": "https://i.ytimg.com/vi/bxu2Iqg8EQU/default.jpg",
         "duration": "2m 25s",
         "topic_categories": [
@@ -76327,7 +76327,7 @@
             "Fun fact, Iranian languages are more linguistically related to Greek than to Arabic.",
             "Well isn\u2019t this Iranic\u2026\u2026"
         ],
-        "like_view_ratio": "11.69%"
+        "like_view_ratio": "11.17%"
     },
     "SL74q6S5tr8": {
         "title": "Magnetic Charges Could Actually Exist, Physicists Find",
@@ -76351,9 +76351,9 @@
     },
     "8k25_HmvtyE": {
         "title": "When Evolution Made The Same Animal Twice",
-        "view_count": "334245",
-        "like_count": "13171",
-        "comment_count": "636",
+        "view_count": "351498",
+        "like_count": "13604",
+        "comment_count": "657",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/8k25_HmvtyE/default.jpg",
         "duration": "21m 54s",
@@ -76367,7 +76367,7 @@
             "As someone who lives in europe has sees large legless lizards on the daily, you&#39;ll never mistake them for snakes. They move in a frantic, full body spasm. Nothing at all like the graceful, elegent and silent movement of snakes.<br><br>Legless they are, snakes they are not \ud83d\ude02",
             "Imagine finding a Permian synapsid who looks like a human primate someday, that will cause so much confusion \ud83d\ude02"
         ],
-        "like_view_ratio": "3.94%"
+        "like_view_ratio": "3.87%"
     },
     "YYU1QWCesKE": {
         "title": "Study Uncovers How Milankovitch Cycles Work Predicting Next Ice Age",
@@ -76411,9 +76411,9 @@
     },
     "wdwzzerMVPY": {
         "title": "Experience ZERO Gravity on Earth!",
-        "view_count": "795322",
-        "like_count": "67278",
-        "comment_count": "656",
+        "view_count": "832978",
+        "like_count": "73119",
+        "comment_count": "711",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/wdwzzerMVPY/default.jpg",
         "duration": "1m 25s",
@@ -76423,11 +76423,11 @@
         "is_short": false,
         "made_for_kids": false,
         "top_comments": [
-            "Einstein rocks \u2764\u2764<br>Newton shocks \ud83d\ude02\ud83d\ude02",
             "Childhood study destroyed in seconds \u2620\ufe0f",
+            "Einstein rocks \u2764\u2764<br>Newton shocks \ud83d\ude02\ud83d\ude02",
             "You explain 100000000..... times better than my school and tuition teachers \u2764\u2764"
         ],
-        "like_view_ratio": "8.46%"
+        "like_view_ratio": "8.78%"
     },
     "IJt7MojYIEk": {
         "title": "BREAKING: Noem says ICE raid leakers found, will face prosecution",
@@ -77551,5 +77551,47 @@
             "One thing i think the Academy should give the finalists the bikes they rode. This is a great way to thank them for making it to the finals."
         ],
         "like_view_ratio": "5.32%"
+    },
+    "BVNBiWjuuYQ": {
+        "title": "What's Inside a Stingray Stinger?",
+        "view_count": "36915",
+        "like_count": "2202",
+        "comment_count": "119",
+        "published_at": "1 days ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/BVNBiWjuuYQ/default.jpg",
+        "duration": "3m 14s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "it&#39;s 6 am and i haven&#39;t slept, perfect timing because i crave knowledge right now",
+            "I CONSUME MORE EDUCATION ON YOUTUBE THAN IN THE SCHOOLS.",
+            "The visuals, as well as the simple and straightforward way to explain a difficult concept is very helpful to learning and comprehension. Great video!"
+        ],
+        "like_view_ratio": "5.97%"
+    },
+    "qSFpZPhYKbw": {
+        "title": "Nazi War Trophies of a WWII Ritchie Boy | American Artifact Episode 160",
+        "view_count": "39508",
+        "like_count": "2086",
+        "comment_count": "135",
+        "published_at": "2 days ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/qSFpZPhYKbw/default.jpg",
+        "duration": "15m 34s",
+        "topic_categories": [
+            "Knowledge",
+            "Military",
+            "Television_program"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "The History Channel turned lame, and History underground stepped into the void and became the best channel in the category \ud83d\udc4f\ud83d\udc4f\ud83d\udc4f",
+            "My father was a Ritchie Boy and I&#39;ve spent the last 30 some years researching them and his service.  Like the man in your video, he never talked about it, nor did anybody else on his team.  I only discovered what he really did during WWII after he died and I took a deep dive into his service.  He would only tell me that he was part of the 30th Infantry Division.  True, but very inadequate. \r<br>\r<br>It&#39;s important to correctly portray the graduates of the Military Intelligence Training Center at Camp Ritchie Maryland (the &#39;Ritchie Boys&#39; as they are now known).  They were decidedly NOT what we imagine when we think about prototypical military men.  \r<br>\r<br>A better image is one of intellectuals, artists, chefs, and musicians who are putting up with (some) military structure for a greater good.  Many were Jewish and from Europe, more were not.  Nearly all had a proficiency in, at least, a second language of any type.  My father&#39;s team of 6 had Cuban, Polish, Jewish, German from Russia, Austrian, and Italian representation on it.  All team members were US citizens, some naturalized just before they shipped out.  The number of Ritchie Boys who went on to be leaders of society in all areas after the war is something; they were absolutely the cream of the crop.  \r<br>\r<br>Training at the MITC was certainly not what you&#39;d expect at a typical military installation.  It was far more relaxed, loose even, but the outcomes demanded were extremely high and those who did not meet those requirements were washed out quickly.  Camp Ritchie was located in the mountains outside Washington DC next to its sister organization the OSS.  \r<br>\r<br>The MITC, in addition to other specialties, produced military intelligence teams who were attached to Army (and Air Corps) orgs from the Division level on up.  Every division had a compliment of intelligence teams attached to it.  These came in 4 types: IPW who interrogated prisoners, MII who talked to civilians, OB who analyzed the order of battle of the opposing forces, and PI who did photo interpretation.  The MITC also trained psyops, counterintelligence, and a variety of other specialties.  It&#39;s very wrong to characterize the Ritchie Boys as simply interrogators.  The importance of the photo intelligence teams attached to Division on up to Army level was critical.  \r<br>\r<br>The Photo Interpretation teams attached to SHAEF played a indispensable role in the D-Day invasion planning.  Another excellent example is at the division level.  Everything the 30th Division did was based, to the extent possible, on the work of its PI team.  Every attack was planned based on their work, every patrol/attack from small to large was briefed before going out on what to expect, and the maps the Division used in its operations (in HQ and distributed to lower units) were created based on the work of the PI team.  Those 6 people played an absolutely enormous role in the operation of the Division.\r<br>\r<br>The graduates of the MITC do not receive the recognition they deserve to this day, for a variety of reasons.  Their work was classified up until the turn of the century, and, it just wasn&#39;t as sexy as what the OSS did.  The Military Intelligence Service just quietly did the lion&#39;s share of the actionable intelligence work.  \r<br>\r<br>Please do more of your excellent videos on the Military Intelligence Service and its members.  It&#39;s way past time they get the recognition they deserve.  While small in numbers they hit way beyond their weight in impact on the war.\r<br>\r<br>Ironically, I leave in about 2 hours to go to the National Archives to continue my research.  Can&#39;t wait.",
+            "Great episode! I love how Erik shares what is known about objects and acknowledges somethings we don\u2019t know for sure but makes sense\u2026.Erik is fantastic"
+        ],
+        "like_view_ratio": "5.28%"
     }
 }
