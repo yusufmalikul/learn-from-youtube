@@ -13482,7 +13482,7 @@
         "title": "Ken Burns: The Civil War - The Cause - 1861",
         "view_count": "N/A",
         "like_count": "507",
-        "comment_count": "109",
+        "comment_count": "110",
         "published_at": "10 years ago",
         "thumbnail_url": "https://i.ytimg.com/vi/OQ6S-OJN8CE/default.jpg",
         "duration": "1h 39m 18s",
@@ -72090,9 +72090,9 @@
     },
     "8o76s9alLeo": {
         "title": "Pollen Is Not Plant Sperm (It\u2019s MUCH Weirder)",
-        "view_count": "116078",
-        "like_count": "8976",
-        "comment_count": "364",
+        "view_count": "168497",
+        "like_count": "12259",
+        "comment_count": "458",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/8o76s9alLeo/default.jpg",
         "duration": "3m 34s",
@@ -72103,11 +72103,11 @@
         "is_short": false,
         "made_for_kids": false,
         "top_comments": [
-            "I wonder what happened during the evolution process that make plant switch from &quot;big male/female, small 2 sets&quot; in moss to &quot;big 2 sets, small male/female&quot; in vascular plant.",
             "So by this logic, trees(and plants in general) can never have tree kids, only tree grandchildren",
-            "This is called alternation of generations in case you wanna look into it more"
+            "This is called alternation of generations in case you wanna look into it more",
+            "I wonder what happened during the evolution process that make plant switch from &quot;big male/female, small 2 sets&quot; in moss to &quot;big 2 sets, small male/female&quot; in vascular plant."
         ],
-        "like_view_ratio": "7.73%"
+        "like_view_ratio": "7.28%"
     },
     "bmYkrb-5zuo": {
         "title": "Ribeye Steak Caesar",
@@ -72327,9 +72327,9 @@
     },
     "BZ-VmgCFHUQ": {
         "title": "Why didn't the Great Powers join the Franco-Prussian War? (Short Animated Documentary)",
-        "view_count": "311661",
-        "like_count": "22830",
-        "comment_count": "892",
+        "view_count": "313878",
+        "like_count": "22918",
+        "comment_count": "893",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/BZ-VmgCFHUQ/default.jpg",
         "duration": "3m 20s",
@@ -72339,11 +72339,11 @@
         "is_short": false,
         "made_for_kids": false,
         "top_comments": [
-            "&quot;France had made the unforgivable mistake, of being France&quot;. That just sums up the British and French relationship throughout the 11th to 18th Century",
             "Another reason why Italy didn&#39;t join the war was because they really wanted Rome, but they knew they weren&#39;t strong enough to take Rome as long as it was defended by French troops. Getting involved in the war on Prussia&#39;s side would mean having to fight those French troops, and getting involved on France&#39;s side wouldn&#39;t give them Rome. So, when they saw the war was going badly for France, they decided their best policy was to wait until France recalled the troops in Rome to defend France and then march in and take a now defenseless Rome and (mostly) complete Italian unification.",
+            "&quot;France had made the unforgivable mistake, of being France&quot;. That just sums up the British and French relationship throughout the 11th to 18th Century",
             "Because &quot;we hate both of you&quot; - everyone<br>Because &quot;I like both of you&quot; - Italy"
         ],
-        "like_view_ratio": "7.33%"
+        "like_view_ratio": "7.30%"
     },
     "6DxJA4sEzFs": {
         "title": "Meghan Markle's Totally Out-of-Touch Drew Barrymore Appearance and People Mag Interview, w/ Callahan",
@@ -73948,9 +73948,9 @@
     },
     "rgsIkZkflMw": {
         "title": "2 Bytes Was Enough To Breach The US Treasury",
-        "view_count": "73369",
-        "like_count": "4511",
-        "comment_count": "256",
+        "view_count": "110527",
+        "like_count": "5937",
+        "comment_count": "337",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/rgsIkZkflMw/default.jpg",
         "duration": "8m 31s",
@@ -73962,10 +73962,10 @@
         "made_for_kids": false,
         "top_comments": [
             "<a href=\"https://www.youtube.com/watch?v=rgsIkZkflMw&amp;t=282\">4:42</a>, tiny correction:<br>It is not checking the first byte (8 bits) of the sequence, rather it is checking whether the first <b><i>three</i></b> bits of the sequence <b><i>s</i></b> is 0xc0 (1100 0000). In other words, `*s &amp; 0xe0` is there to mask the first three bits of <b><i>s</i></b> and the `== 0xc0` is there to check whether the <b><i>masked</i></b> three bits equal to <b><i>110</i></b> 0 0000. Because in UTF-8 encoding, 0xxxxxxx, 110xxxxx, 1110xxxx and 11110xxx are apparently reserved &quot;keywords&quot; that determine the length of the stored character. This kicked my ass when I first watched the video, hope it clarifies it for others :)",
-            "That&#39;s quite creative a flaw inside the escape feature itself that&#39;s gone linger for many years to come on legacy systems.",
-            "The amount of bugs caused by trying to check the length of a string"
+            "The amount of bugs caused by trying to check the length of a string",
+            "That&#39;s quite creative a flaw inside the escape feature itself that&#39;s gone linger for many years to come on legacy systems."
         ],
-        "like_view_ratio": "6.15%"
+        "like_view_ratio": "5.37%"
     },
     "k_7OpM0KhzE": {
         "title": "Grave of the German Navy - Battle of Norway 1940 (Documentary)",
@@ -74030,10 +74030,10 @@
     },
     "xZDSqmOnnR0": {
         "title": "Human Language Gene Inserted Into Mice Led to Some Bizarre Effects",
-        "view_count": "288978",
-        "like_count": "23991",
-        "comment_count": "3236",
-        "published_at": "22 hours ago",
+        "view_count": "347982",
+        "like_count": "27497",
+        "comment_count": "3641",
+        "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/xZDSqmOnnR0/default.jpg",
         "duration": "12m 47s",
         "topic_categories": [
@@ -74045,15 +74045,15 @@
         "top_comments": [
             "&quot;Gee, Brain. What are we going to do tonight?&quot;<br>&quot;The same thing we do every night, Pinky. Try to take over the world!&quot;",
             "Doctor: <i>Injects human speech gene into mouse</i><br>Mouse: &quot;Why the f*ck you got us all locked up in these cages, bro?&quot;",
-            "&quot;These creatures you call mice, you see, they are not quite as they appear. They are merely the protrusion into our dimension of vast hyperintelligent pandimensional beings. The whole business with the cheese and the squeaking is just a front.&quot;<br>The old man paused, and with a sympathetic frown continued.<br>&quot;They&#39;ve been experimenting on you, I&#39;m afraid.\u201d  \u2015 Douglas Adams, The Hitchhiker\u2019s Guide to the Galaxy"
+            "Giving mice the gift of understanding the horrors that used to be beyond their comprehension."
         ],
-        "like_view_ratio": "8.30%"
+        "like_view_ratio": "7.90%"
     },
     "FnRhnZbDprE": {
         "title": "A 1.58-Dimensional Object - Numberphile",
-        "view_count": "170299",
-        "like_count": "10607",
-        "comment_count": "839",
+        "view_count": "173274",
+        "like_count": "10711",
+        "comment_count": "840",
         "published_at": "1 days ago",
         "thumbnail_url": "https://i.ytimg.com/vi/FnRhnZbDprE/default.jpg",
         "duration": "20m 25s",
@@ -74067,7 +74067,7 @@
             "Feels very classic. To me one of the 10/10 Numberphile videos",
             "Brady is so good at asking the right questions and Ben is so good at playing off the questions he asks, their dynamic together is so enjoyable"
         ],
-        "like_view_ratio": "6.23%"
+        "like_view_ratio": "6.18%"
     },
     "03flhhm8FOQ": {
         "title": "Eastern Europe explained \ufffc",
@@ -76267,5 +76267,166 @@
             "Cus your the goat"
         ],
         "like_view_ratio": "2.75%"
+    },
+    "6LX5cLwsTB4": {
+        "title": "The Brutal Reality of Neanderthal Violence",
+        "view_count": "55851",
+        "like_count": "3947",
+        "comment_count": "337",
+        "published_at": "19 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/6LX5cLwsTB4/default.jpg",
+        "duration": "16m 31s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Our village is near Shanidar Cave, and it has a truly exotic and stunning view in person. Greetings from Kurdistan! \u2764",
+            "As someone who cracked two ribs  coming off my motorcycle just over a week ago, I really feel for this poor neanderthal. I am fortunate that medicine has never been more advanced, and I&#39;ve had access to decent pain relief and physio therapy. I can&#39;t imagine the pain this poor chap felt in his final days or weeks. Makes you realise how lucky we all are to live in the time period we do.",
+            "One of the best channels on the Youba Tuba"
+        ],
+        "like_view_ratio": "7.07%"
+    },
+    "7oubo6Wdazw": {
+        "title": "Ancient Earth: The Mystery of the Feathered Dragons",
+        "view_count": "112279",
+        "like_count": "2305",
+        "comment_count": "97",
+        "published_at": "1 days ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/7oubo6Wdazw/default.jpg",
+        "duration": "52m 14s",
+        "topic_categories": [
+            "Knowledge",
+            "Television_program"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "The connection between dinosaurs and modern birds is truly mind-blowing! Huge thanks to the production team for this captivating and informative documentary! \ud83d\udc4f",
+            "The 2 winged dinosaur making out while the bigger ones was searching them was so funny...nice work for the animators and editors! Cheers from philippines",
+            "Cassowary is the most dinosaur thing ever, a true ancestor of dinosaurs."
+        ],
+        "like_view_ratio": "2.05%"
+    },
+    "bxu2Iqg8EQU": {
+        "title": "The 3 Iranic countries explained",
+        "view_count": "95401",
+        "like_count": "11700",
+        "comment_count": "221",
+        "published_at": "11 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/bxu2Iqg8EQU/default.jpg",
+        "duration": "2m 25s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Fun fact: to this day in Greece we have the expression &quot;you speak English Farsi&quot; which means that you speak English really well. Presumably due to how difficult it was for a Greek back then to learn fluent Persian. <br><br>And we call Iran Persia and Iranians Persians because old habits (2.5 thousand years old) die hard I guess",
+            "Well isn\u2019t this Iranic\u2026\u2026",
+            "Excellent summary!"
+        ],
+        "like_view_ratio": "12.26%"
+    },
+    "SL74q6S5tr8": {
+        "title": "Magnetic Charges Could Actually Exist, Physicists Find",
+        "view_count": "149841",
+        "like_count": "7602",
+        "comment_count": "668",
+        "published_at": "19 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/SL74q6S5tr8/default.jpg",
+        "duration": "7m 12s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Loneliness epidemic has gone so bad that now even magnetic poles are becoming single \ud83d\ude05\ud83d\ude05",
+            "As a Pole I confirm, we do in fact come in pairs. I do not understand why scientists want to isolate us from each other.",
+            "<a href=\"https://www.youtube.com/watch?v=SL74q6S5tr8&amp;t=61\">1:01</a> I appreciate how Dr. Sabine gets Dirac to the point."
+        ],
+        "like_view_ratio": "5.07%"
+    },
+    "8k25_HmvtyE": {
+        "title": "When Evolution Made The Same Animal Twice",
+        "view_count": "276700",
+        "like_count": "11490",
+        "comment_count": "558",
+        "published_at": "21 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/8k25_HmvtyE/default.jpg",
+        "duration": "21m 54s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Once saw something I had never seen before a few summers ago. It looked like a crossbreed between a hummingbird and a bumblebee. Come to find out it was a moth that fed on flower nectar. Craziest thing I\u2019ve seen in my 48 years",
+            "As someone who lives in europe has sees large legless lizards on the daily, you&#39;ll never mistake them for snakes. They move in a frantic, full body spasm. Nothing at all like the graceful, elegent and silent movement of snakes.<br><br>Legless they are, snakes they are not \ud83d\ude02",
+            "Syminia was not a reptile, it was a synapsid, meaning it&#39;s more closely related to us than it is to reptiles"
+        ],
+        "like_view_ratio": "4.15%"
+    },
+    "YYU1QWCesKE": {
+        "title": "Study Uncovers How Milankovitch Cycles Work Predicting Next Ice Age",
+        "view_count": "141730",
+        "like_count": "11800",
+        "comment_count": "1358",
+        "published_at": "13 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/YYU1QWCesKE/default.jpg",
+        "duration": "13m 48s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Anton, my wife was wearing one of your lovely &quot;Wonderful Person&quot; tee-shirts at the grocery store just yesterday and another customer noticed that she was wearing it... To make a long story short: It was cool! It is the first time that we have met a new person out in &quot;The World&quot; that happened to be subscribed to the same content creator on Youtube. Best $5 we ever spent... Love your videos!",
+            "As someone who has been following this debate since the 1970s, I have to say this is the best presentation of these complex ideas I have seen.",
+            "1 min after, and I am feeling privileged for having this channel in my life!<br>Thank you for sharing so much interesting discoveries with us, wonderful Anthon!"
+        ],
+        "like_view_ratio": "8.33%"
+    },
+    "PCE4C9GvqI0": {
+        "title": "Is English really a Germanic language?",
+        "view_count": "169098",
+        "like_count": "12740",
+        "comment_count": "1827",
+        "published_at": "21 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/PCE4C9GvqI0/default.jpg",
+        "duration": "21m 45s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Feel free to argue with any of my points here in the comments. And remember to go to <a href=\"https://ground.news/robwords\">https://ground.news/robwords</a> to see how language shapes our perspectives. Save 40% for unlimited access to the Vantage Plan through my link.",
+            "Being German I am right now perplexed that I never made the connection between starving and sterben. It&#39;s so obvious once you ever notice",
+            "To stress the point that English is undoubtedly a Germanic language, I&#39;d like to add that most of its non-Germanic words are simply synonyms we could easily do away with as we already have the Anglo-Saxon words for them, such as damage/harm, companion/mate, correct/right,  humanity/mankind, vacation/holiday, prohibit/forbid, realm/kingdom, vision/eyesight, conduct/behaviour, lance/spear, liberty/freedom, valley/dale, flower/bloom/blossom, power/might, result/outcome, obscure/dark, gratitude/thankfulness, similar/akin, different/unlike, ancestor/forebear, precursor/forerunner, form/shape, calculate/reckon, fortify/strengthen, etc./and so on and so forth..."
+        ],
+        "like_view_ratio": "7.53%"
+    },
+    "wdwzzerMVPY": {
+        "title": "Experience ZERO Gravity on Earth!",
+        "view_count": "657721",
+        "like_count": "58059",
+        "comment_count": "580",
+        "published_at": "21 hours ago",
+        "thumbnail_url": "https://i.ytimg.com/vi/wdwzzerMVPY/default.jpg",
+        "duration": "1m 25s",
+        "topic_categories": [
+            "Knowledge"
+        ],
+        "is_short": false,
+        "made_for_kids": false,
+        "top_comments": [
+            "Einstein rocks \u2764\u2764<br>Newton shocks \ud83d\ude02\ud83d\ude02",
+            "You explain 100000000..... times better than my school and tuition teachers \u2764\u2764",
+            "Childhood study destroyed in seconds \u2620\ufe0f"
+        ],
+        "like_view_ratio": "8.83%"
     }
 }
